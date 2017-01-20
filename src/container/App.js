@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <div className={styles.app}>
         <Header/>
-        <Actionbar/>
+        <Actionbar onSearch={this.props.onSearch}/>
         <Grid projectsData={this.props.projectsData}/>
       </div>
     )

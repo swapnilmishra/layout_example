@@ -1,8 +1,8 @@
-/* Header */
-.navlink {
-    text-transform: uppercase;
-}
+@import '../../sass/all';
 
-.nav {
+.actionbar {
     border-bottom: 1px solid #eaefed;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: $background-color;
 }

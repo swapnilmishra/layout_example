@@ -62,7 +62,7 @@ class Card extends React.Component {
           <div className={cardauthor}>
             <img src="http://lorempixel.com/40/40/sports/" alt="user" />
             <div className={cardauthorcontent}>
-              <a href="#" className={cardLink}>
+              <a href="#" className={cardLink} title={this.props.projectName}>
                 {this.props.projectName}
               </a>
               <div className={cardauthorsub}>by {this.props.ownerName}</div>

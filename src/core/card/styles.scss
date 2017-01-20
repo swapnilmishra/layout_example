@@ -41,7 +41,7 @@ $spacing-default : 15px;
 	position: relative;
 	min-width: 200px;
 	min-height: 220px;
-	background-color: #eee;
+	background-color: $background-color;
 }
 
 .cardimage img {

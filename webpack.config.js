@@ -81,7 +81,8 @@ module.exports = {
       navbar : resolve(__dirname,'src/core/navbar'),
       dropdown : resolve(__dirname,'src/core/dropdown'),
       card : resolve(__dirname,'src/core/card'),
-      sass : resolve(__dirname,'src/sass')
+      sass : resolve(__dirname,'src/sass'),
+      utils : resolve(__dirname,'src/utils')      
       
     }
   }
