@@ -1,0 +1,9 @@
+@import '../../sass/all';
+
+.header{
+    border-bottom: 1px solid $border-color;
+}
+
+.clear{
+    @extend .clearfix;
+}

@@ -1,0 +1,50 @@
+@import '../../sass/all';
+
+$el-default-margin : 15px;
+
+.navbar{
+    list-style: none;
+    color: $color-secondary;
+    padding: 12px 10px;
+}
+
+.navbarlink{
+    color: $color-secondary;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $font-size;
+}
+
+.navbarli{
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+.active{
+     a{
+        color: $color-primary;
+     }
+}
+
+.dropdownparent{
+    position: relative;
+}
+
+.dropdown{
+    top: 43px;
+    right: 25px;
+}
+.mainmenu{
+    float: right;
+    margin-right: $el-default-margin;
+}
+
+.logo{
+    padding: 5px;
+    float: left;
+    margin-left: $el-default-margin;
+}
+
+.image {
+    width: 30px;
+}
