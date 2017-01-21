@@ -1,0 +1,25 @@
+@import '~sass/all';
+
+.btn{
+    font-size: 1rem;
+    letter-spacing: .1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #2e6da4;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 10px;
+    text-align: center;
+    background-color: $color-primary;
+    outline: 0;
+
+    &:hover{
+        background-color: $hover-color;
+        border-color: $hover-border-color;
+    }
+}
+
+.btnborder {
+     border-radius : $border-radius;
+}

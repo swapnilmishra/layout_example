@@ -1,9 +1,15 @@
 @import '../../sass/all';
 
 .container{
-    padding: 10px;
+    padding: $default-spacing;
+}
+
+.sorttag{
+    padding: $default-spacing + 10;
+    color: $color-subtext;
+    font-size: $font-size - 1;
 }
 
 .card {
-    padding: 0px 10px 20px;
+    padding: 0px ($default-spacing) ($default-spacing + 10);
 }

@@ -2,13 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import projectsData from "./api/data";
 import {AppContainer} from "react-hot-loader";
+import _ from 'lodash';
 // AppContainer is a necessary wrapper component for HMR
 import App from "container/App";
 
-const render = (Component,projectsData) => {
+const render = (Component,projectsData,sortBy) => {
   ReactDOM.render(
     <AppContainer>
-      <Component projectsData={projectsData} onSearch={onSearch}/>
+      <Component projectsData={projectsData} onSearch={onSearch} onSortBy={onSortBy} sortBy={sortBy}/>
     </AppContainer>,
     document.getElementById("root")
   );
@@ -24,6 +25,14 @@ function onSearch(value){
   })
 
   render(App,data)
+}
+
+function onSortBy(sortBy){
+  sortBy = sortBy
+  const data = _.sortBy(projectsData,function(project){
+    return (project[sortBy])
+  })
+  render(App,data.reverse(),sortBy)
 }
 
 render(App,projectsData);

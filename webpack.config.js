@@ -80,6 +80,8 @@ module.exports = {
       actionbar : resolve(__dirname,'src/components/actionbar/Actionbar.jsx'),
       navbar : resolve(__dirname,'src/core/navbar'),
       dropdown : resolve(__dirname,'src/core/dropdown'),
+      buttongroup : resolve(__dirname,'src/core/buttongroup/Buttongroup.jsx'),
+      button : resolve(__dirname,'src/core/button/Button.jsx'),
       card : resolve(__dirname,'src/core/card'),
       sass : resolve(__dirname,'src/sass'),
       utils : resolve(__dirname,'src/utils')      

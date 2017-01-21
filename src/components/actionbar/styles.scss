@@ -6,3 +6,35 @@
     margin-bottom: 10px;
     background-color: $background-color;
 }
+
+.btngroup{
+    float: right;
+}
+
+
+.search{
+    height: 33px;
+    font-size: $font-size;
+    padding-left: 5px;
+    outline: none;
+    // &:focus{
+    //     border: 1px solid $color-primary;
+    // }
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    color: $color-secondary;
+    font-weight: 500;
+    font-size: $font-size + 10;
+}
+
+.layoutSwitchButton{
+    margin-left: 20px;
+}
+
+.searchButton{
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+}

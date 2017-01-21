@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles.scss';
-import Navbar from 'navbar'
+import Navbar from 'navbar';
 
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
@@ -11,7 +11,9 @@ const listItems = [
   {text: 'forum'},
   {text : 'help', dropdown: true, listItems : [
     {text : 'tutorials', link : '#'},
-    {text : 'documentation', link : '#'}
+    {text : 'documentation', link : '#'},
+    {text : 'learning vidoes', link : '#'},
+    {text : 'community tour', link : '#'}
   ]}
 ]
 
