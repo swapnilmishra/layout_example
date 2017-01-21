@@ -31,8 +31,13 @@ $spacing-default : 15px;
 	margin-bottom: $spacing-default;
 	font-size: $font-size - 1;
 	cursor: pointer;
-	width: 280px;
 	margin: 0 auto;
+}
+
+@media screen and (min-width: 48em){
+	.card {
+		width: 280px;
+	}
 }
 
 .cardpadding {
@@ -133,14 +138,15 @@ a {
 
 .preview{
 	@extend .center;
-	width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.74);
-    border-radius: 50%;
-    font-size: 15px;
-    text-align: center;
-    padding-top: 5px;
-	color: #fff;
+	    width: 60px;
+		height: 60px;
+		background-color: rgba(0, 0, 0, 0.59);
+		border-radius: 50%;
+		font-size: 20px;
+		text-align: center;
+		padding-top: 20px;
+		color: #fff;
+
 }
 
 .show {
