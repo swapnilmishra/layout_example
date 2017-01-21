@@ -13,22 +13,26 @@ export default class Navbar extends React.Component {
 
   render() {
     return (
-      <div className="pure-g">
-        <div className="pure-u-lg-3-24 pure-u-md-3-24">
-          {this.getLogoElement(this.props.logo)}
-        </div>
-        <div className="pure-u-lg-16-24 pure-u-md-16-24">
-          <div className={styles.mainmenu}>
-            <ul className={styles.navbar}>
-              {this.getListElements(this.props.navItems)}
-            </ul>
+      <div className='container'>
+        <div className="row">
+          <div className="col-lg-2 col-md-2 col-sm-2">
+            {this.getLogoElement(this.props.logo)}
           </div>
-        </div>
-        <div className='pure-u-lg-5-24 pure-u-md-5-24'>
-          <div className={styles.profileavatar}>
-            <span className={styles.profilename}>swapnil</span>
-            <img src="http://lorempixel.com/40/40/sports/" alt="user" />
-            <span className={styles.caret}><FontAwesome name="angle-down" /></span>
+          <div className="col-lg-8 col-md-8 col-sm-7 hidden-xs">
+            <div className={styles.mainmenu}>
+              <ul className={styles.navbar}>
+                {this.getListElements(this.props.navItems)}
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-2 col-md-2 col-sm-3">
+            <div className={styles.profileavatar}>
+              <span className={styles.profilename}>swapnil</span>
+              <img src="http://lorempixel.com/40/40/sports/" alt="user" />
+              <span className={styles.caret}>
+                <FontAwesome name="angle-down" />
+              </span>
+            </div>
           </div>
         </div>
       </div>

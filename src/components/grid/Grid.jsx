@@ -6,12 +6,12 @@ import FontAwesome from "react-fontawesome";
 import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
 
-const containerCSS = cx("pure-g", styles.container);
-const cardCSS = cx("pure-u-1", "pure-u-md-1-2", "pure-u-lg-1-3", 'pure-u-xl-1-4', styles.card);
+const containerCSS = cx("row", styles.container);
+const cardCSS = cx('col-lg-3','col-md-4','col-sm-6','col-xs-12',styles.card);
 
 const Grid = props => {
   return (
-    <div>
+    <div className='container'>
       <SortTag sortBy={props.sortBy} />
       <div className={containerCSS}>
         {getCards(props.projectsData)}

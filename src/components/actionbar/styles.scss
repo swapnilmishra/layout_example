@@ -7,24 +7,17 @@
     background-color: $background-color;
 }
 
-.btngroup{
-    float: right;
-}
-
-
-.search{
+.searchbox{
     height: 33px;
-    font-size: $font-size;
+    font-size: $font-size + 1;
     padding-left: 5px;
     outline: none;
-    // &:focus{
-    //     border: 1px solid $color-primary;
-    // }
 }
 
 h1{
     margin: 0;
     padding: 0;
+    padding-left: 5px;
     color: $color-secondary;
     font-weight: 500;
     font-size: $font-size + 10;
@@ -39,6 +32,31 @@ h1{
     border-bottom-right-radius: $border-radius;
 }
 
-.searchContainer{
-    float: right;
+@media (max-width: 768px) {
+    .searchContainer,.btngroup{
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .searchContainer{
+        float: right;
+    }
+
+    .btngroup{
+        float: right;
+    }
+}
+
+.sortbydropdowncontainer{
+    padding-top: 15px;
+    position: relative;
+    text-align: right;
+}
+
+.sortbydropdown{
+    top: 40px;
+    right: 0;
+    text-align: center;
 }

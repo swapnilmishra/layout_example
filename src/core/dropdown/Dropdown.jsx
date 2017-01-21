@@ -51,14 +51,14 @@ class Dropdown extends React.Component {
     return (
       <li className={classnames} key={index}>
         <a key={index} href={item.link || "#"} className={styles.dropdownlink}>
-          {item.text}
+          {item.icon && <FontAwesome name={item.icon} />}{item.text}
         </a>
         {item.children ? item.children : null}
       </li>
     );
   }
 
-  toggleDropDown = (e) => {
+  toggleDropDown = e => {
     this.setState({open: !this.state.open});
   };
 }

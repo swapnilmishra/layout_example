@@ -34,9 +34,9 @@ $spacing-default : 15px;
 	margin: 0 auto;
 }
 
-@media screen and (min-width: 48em){
+@media screen and (min-width: 750px){
 	.card {
-		width: 280px;
+		width: 260px;
 	}
 }
 

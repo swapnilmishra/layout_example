@@ -41,7 +41,7 @@ $el-default-margin : 15px;
 .logo{
     padding: ($el-default-margin - 10);
     float: left;
-    margin-left: $el-default-margin;
+    // margin-left: $el-default-margin;
 }
 
 .image {
@@ -49,10 +49,10 @@ $el-default-margin : 15px;
 }
 
 .profileavatar{
-    padding: 0px ($el-default-margin - 5);
+    // padding: 0px ($el-default-margin - 5);
     float: right;
     margin-top: 6px;
-    margin-right: $el-default-margin;
+    // margin-right: $el-default-margin;
     img {
         border-radius: 50%;
         width: 30px;
