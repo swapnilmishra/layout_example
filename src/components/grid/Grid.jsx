@@ -7,7 +7,7 @@ import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
 
 const containerCSS = cx("pure-g", styles.container);
-const cardCSS = cx("pure-u-1", "pure-u-md-1-3", "pure-u-lg-1-4", styles.card);
+const cardCSS = cx("pure-u-1", "pure-u-md-1-2", "pure-u-lg-1-3", 'pure-u-xl-1-4', styles.card);
 
 const Grid = props => {
   return (

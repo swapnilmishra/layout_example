@@ -11,5 +11,7 @@
 }
 
 .card {
-    padding: 0px ($default-spacing) ($default-spacing + 10);
+    // padding: 0px ($default-spacing + 10) ($default-spacing + 10);
+    // width: 280px;
+    margin-bottom: $default-spacing * 4;
 }
