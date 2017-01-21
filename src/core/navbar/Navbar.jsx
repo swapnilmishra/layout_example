@@ -14,17 +14,17 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div className="pure-g">
-        <div className="pure-u-3-24">
+        <div className="pure-u-lg-3-24 pure-u-md-3-24">
           {this.getLogoElement(this.props.logo)}
         </div>
-        <div className="pure-u-18-24">
+        <div className="pure-u-lg-16-24 pure-u-md-16-24">
           <div className={styles.mainmenu}>
             <ul className={styles.navbar}>
               {this.getListElements(this.props.navItems)}
             </ul>
           </div>
         </div>
-        <div className='pure-u-3-24'>
+        <div className='pure-u-lg-5-24 pure-u-md-5-24'>
           <div className={styles.profileavatar}>
             <span className={styles.profilename}>swapnil</span>
             <img src="http://lorempixel.com/40/40/sports/" alt="user" />
