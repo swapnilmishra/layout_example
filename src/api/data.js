@@ -30,6 +30,7 @@ const data = [
     "numberOfSimulations": 0,
     "numberOfSimulationRuns": 0,
     "numberOfCopies": 0,
+    "thumbnailUrl": "/api/v1/projects/aarond7198/clay_target_idea_1/e5a20372-16f8-476d-b0f6-bc960eb77fa9/thumbnail?token\u003d682b032ea9ef1e2153f7842372273c376cba798f40d2ea15975591aa72bc80bd20170120T201000.000Z",
     "categories": [
       "LEARNING_TEACHING"
     ]
@@ -69,7 +70,6 @@ const data = [
     "numberOfSimulations": 1,
     "numberOfSimulationRuns": 0,
     "numberOfCopies": 0,
-    "thumbnailUrl": "/api/v1/projects/aarond7198/clay_target_idea_1/e5a20372-16f8-476d-b0f6-bc960eb77fa9/thumbnail?token\u003d682b032ea9ef1e2153f7842372273c376cba798f40d2ea15975591aa72bc80bd20170120T201000.000Z",
     "categories": [
       "TESTING"
     ]
