@@ -31,6 +31,10 @@ _To include components [webpack aliases](https://github.com/swapnilmishra/layout
 
 There seems to be some problem with npm proxy module while communicating with Simscale api so, right now the data which, api returns is beings put into a [data file](https://github.com/swapnilmishra/layout_example/blob/master/src/api/data.js) and using ```setTimeout``` api behaviour is mocked.
 
+### Note regarding CSS
+
+CSS is per component i.e every component will have its own styles.scss file at the same level. Accessing CSS using style-loader module of webpack. This gives adavantage of keeping the CSS flat, avoiding issues with global CSS. Inheritence can still be acheived using SASS. Becasue CSS classnames will be referenced in JS this provides opportunity to perform static analysis and results in lesser/no unused CSS.
+
 ## Features and UI overview
 
 * Fully responsive
