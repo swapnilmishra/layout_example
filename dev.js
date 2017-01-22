@@ -30,7 +30,13 @@ module.exports = function(env) {
       contentBase: resolve(__dirname, "dist"),
       // match the output path
       // match the output `publicPath`
-      publicPath: "/"
+      publicPath: "/",
+      proxy : {
+        '/simscale': {
+          target : 'https://www.simscale.com',
+          secure : true
+        }
+      }
     },
     module: {
       rules: [
@@ -65,6 +71,7 @@ module.exports = function(env) {
         button: resolve(__dirname, "src/core/button/Button.jsx"),
         card: resolve(__dirname, "src/core/card"),
         sidenav: resolve(__dirname, "src/core/sidenav/Sidenav.jsx"),
+        placeholder : resolve(__dirname, "src/core/placeholder/Placeholder.jsx"),
         sass: resolve(__dirname, "src/sass"),
         utils: resolve(__dirname, "src/utils")
       }

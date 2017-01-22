@@ -5,6 +5,7 @@ import Actionbar from "actionbar";
 import Grid from "grid";
 import Sidenav from "sidenav";
 import Button from "button";
+import Placeholder from "placeholder";
 
 class App extends React.Component {
   constructor(props) {
@@ -20,11 +21,15 @@ class App extends React.Component {
           onSortBy={this.props.onSortBy}
           sortBy={this.props.sortBy}
         />
-        <Grid
-          projectsData={this.props.projectsData}
-          sortBy={this.props.sortBy}
-          clearSortResult={this.props.clearSortResult}
-        />
+        {
+          this.props.projectsData
+            ? <Grid
+              projectsData={this.props.projectsData}
+              sortBy={this.props.sortBy}
+              clearSortResult={this.props.clearSortResult}
+            />
+            : <Placeholder count={8}/>
+        }
         <Sidenav open={this.state.fabOpen}>
           {() => {
               this.setState({fabOpen: false});

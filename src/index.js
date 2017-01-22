@@ -45,7 +45,11 @@ function clearSortResult(){
   render(App, projectsData);
 }
 
-render(App, projectsData);
+setTimeout(()=>{
+  render(App, projectsData);
+},3000);
+
+render(App, undefined);
 
 // Hot Module Replacement API
 if (module.hot) {

@@ -38,6 +38,7 @@ module.exports = function(env) {
         select: resolve(__dirname, "src/core/select/Select.jsx"),
         button: resolve(__dirname, "src/core/button/Button.jsx"),
         card: resolve(__dirname, "src/core/card"),
+        placeholder : resolve(__dirname, "src/core/placeholder/Placeholder.jsx"),
         sidenav: resolve(__dirname, "src/core/sidenav/Sidenav.jsx"),
         sass: resolve(__dirname, "src/sass"),
         utils: resolve(__dirname, "src/utils")

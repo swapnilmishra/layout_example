@@ -6,10 +6,10 @@ const cx = classNames.bind(styles);
 
 const Button = props => {
   const classnames = cx(styles.btn,props.cls,{btnborder:!props.noBorder});
-  return props.icon ? <button className={classnames} {...props}>
+  return props.icon ? <button className={classnames} onClick={props.onClick}>
       <FontAwesome name={props.icon} />
       {props.text}
-    </button> : <button {...props} className={classnames}>{props.text}</button>;
+    </button> : <button onClick={props.onClick} className={classnames}>{props.text}</button>;
 };
 
 export default Button;
