@@ -37,11 +37,13 @@ CSS is per component i.e every component will have its own styles.scss file at t
 
 ## Features and UI overview
 
+[Screenshots](https://github.com/swapnilmishra/layout_example/blob/master/screenshots)
+
 * Fully responsive
 * I have tested it in Chrome, FF and Safari and it works fine.
 * Reusable components
 * Content placeholder while data is loading (Empty state)
-* I have put my ideas and design thinking for how it should look for mobile viewports specially, which is a bit different than how it looks for bigger breakpoints.
+* I have put my ideas and design thinking for how it should look for mobile viewports specially, which is a bit different than how it looks for bigger breakpoints [image](https://github.com/swapnilmishra/layout_example/blob/master/screenshots/mobile.png)
 * FAB button for mobile viewport.
 * Search projects by name, clear result.
 * Sorting by views,likes,copies and clear sort.
