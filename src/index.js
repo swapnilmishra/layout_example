@@ -55,6 +55,6 @@ render(App, undefined);
 if (module.hot) {
   module.hot.accept("container/App", () => {
     const NewApp = require("container/App").default;
-    render(NewApp);
+    render(NewApp,projectsData);
   });
 }
