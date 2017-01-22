@@ -1,7 +1,7 @@
 @import '../../sass/all';
 
-.container{
-    padding: $default-spacing;
+.gridcontainer{
+    margin-top: $default-spacing;
 }
 
 .sorttag{
@@ -11,7 +11,13 @@
 }
 
 .card {
-    // padding: 0px ($default-spacing + 10) ($default-spacing + 10);
-    // width: 280px;
     margin-bottom: $default-spacing * 4;
+}
+.clearfilterbutton{
+    margin-left: 10px;
+    padding: 6px 10px;
+    border: 1px solid $color-primary;
+}
+.sortbytext{
+    font-weight: 500;
 }

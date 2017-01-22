@@ -4,6 +4,7 @@ import debounce from "utils/debounce";
 import ButtonGroup from "buttongroup";
 import Button from "button";
 import Dropdown from "dropdown";
+import Select from "select";
 
 import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
@@ -11,9 +12,9 @@ const cx = classNames.bind(styles);
 const sortOptions = {
   text: "Sort by",
   listItems: [
-    {text: "views", link: "#", icon: 'eye'},
-    {text: "likes", link: "#", icon: 'heart'},
-    {text: "copies", link: "#", icon : 'code-fork'}
+    {text: "Views", link: "#", icon: 'eye', sortBy : 'numberOfViews'},
+    {text: "Likes", link: "#", icon: 'heart', sortBy: 'numberOfLikes'},
+    {text: "Copies", link: "#", icon : 'code-fork', sortBy: 'numberOfCopies'}
   ]
 };
 
@@ -35,7 +36,7 @@ class Actionbar extends React.Component {
             <div className="col-lg-4 col-md-4 col-sm-4 hidden-xs">
               <h1>Public projects</h1>
             </div>
-            <div className="col-lg-5 col-md-4 col-sm-4 col-xs-8">
+            <div className="col-lg-5 col-md-4 col-sm-4 col-xs-12">
               <div className={styles.searchContainer}>
                 <input
                   type="text"
@@ -51,9 +52,9 @@ class Actionbar extends React.Component {
                 />
               </div>
             </div>
-            <div className="visible-xs col-xs-4">
+            <div className="visible-xs col-xs-12">
               <div className={styles.sortbydropdowncontainer}>
-                <Dropdown {...sortOptions} cls={styles.sortbydropdown}/>
+                <Select {...sortOptions} onChange={this.props.onSortBy} selectedValue={this.props.sortBy}/>
               </div>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-4 col-xs-12 hidden-xs">

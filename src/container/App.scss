@@ -3,3 +3,23 @@
 .app {
     font-family: 'Lato', sans-serif;
 }
+
+
+.fabicon{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .fabicon{
+        display: block;
+        position: fixed;
+        bottom: 25px;
+        right: 15px;
+    }
+
+    .fabbutton{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+    }
+}

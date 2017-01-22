@@ -1,0 +1,21 @@
+.select {
+    // border: 1px solid #ccc;
+    // width: 120px;
+    // border-radius: 3px;
+    overflow: hidden;
+    background: url('/img/arrow.png') no-repeat 95% 50%;
+}
+
+.select select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select select:focus {
+    outline: none;
+}

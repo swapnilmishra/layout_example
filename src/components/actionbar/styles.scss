@@ -2,7 +2,8 @@
 
 .actionbar {
     border-bottom: 1px solid #eaefed;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 10px;
     background-color: $background-color;
 }
@@ -32,10 +33,31 @@ h1{
     border-bottom-right-radius: $border-radius;
 }
 
+.sortbydropdowncontainer{
+        font-size: $font-size + 1;
+        padding-top: 10px;
+        position: relative;
+        text-align: right;
+        margin-right: -20px;
+        width: 80px;
+}
+
+.sortbydropdown{
+    top: 40px;
+    right: 0;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .searchContainer,.btngroup{
         margin-top: 8px;
         margin-bottom: 8px;
+    }
+    .searchbox {
+        width: 85%;
+    }
+    .searchButton{
+        width: 15%;
     }
 }
 
@@ -49,14 +71,11 @@ h1{
     }
 }
 
-.sortbydropdowncontainer{
-    padding-top: 15px;
-    position: relative;
-    text-align: right;
-}
-
-.sortbydropdown{
-    top: 40px;
-    right: 0;
-    text-align: center;
+@media (max-width: 270px) {
+    .searchbox {
+        width: 70%;
+    }
+    .searchButton{
+        width: 30%;
+    }   
 }
