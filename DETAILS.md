@@ -2,7 +2,7 @@
 
 ```
 npm install or yarn install // installs dependencies
-npm run // runs local webpack dev server
+npm start // runs local webpack dev server
 ```
 
 webpack-dev-middleware is used to run local server with hot reloading of assets.
