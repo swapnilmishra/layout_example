@@ -15,7 +15,7 @@ Running ```npm run build:prod``` outputs prduction ready bundlejs.
 * postcss - for vendor autprefixing etc
 * Bootstrap - for responsive grid
 * Fontawesome - for icon fonts
-* MomentJS. Lodash - for date calculations and collection sorting respectively.
+* MomentJS, Lodash - for date calculations and collection sorting respectively.
 * Webpack,Babel - for building and compiling JSX,ES6,SASS
 * Webpack dev and prod build with different configs
 
