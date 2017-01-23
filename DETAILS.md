@@ -33,7 +33,7 @@ There seems to be some problem with npm proxy module while communicating with Si
 
 ### Note regarding CSS
 
-CSS is per component i.e every component will have its own styles.scss file at the same level. Accessing CSS using style-loader module of webpack. This gives adavantage of keeping the CSS flat, avoiding issues with global CSS. Inheritence can still be acheived using SASS. Becasue CSS classnames will be referenced in JS this provides opportunity to perform static analysis and results in lesser/no unused CSS.
+CSS is per component i.e every component will have its own _styles.scss_ file at the same level. Accessing CSS using style-loader module of webpack. This gives adavantage of keeping the CSS flat, avoiding issues with global CSS. Inheritence can still be acheived using SASS. Becasue CSS classnames will be referenced in JS this provides opportunity to perform static analysis and results in lesser/no unused CSS.
 
 ## Features and UI overview
 
